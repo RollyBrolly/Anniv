@@ -1,21 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rei</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rei</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <div><span id="years">0</span> Years</div>
-        <div><span id="months">0</span> Months</div>
-        <div><span id="days">0</span> Days</div>
-        <div><span id="hours">0</span> Hours</div>
-        <div><span id="minutes">0</span> Minutes</div>
-        <div><span id="seconds">0</span> Seconds</div>
+  <!-- ============ NAVBAR ============ -->
+  <header>
+    <div class="lights-bar">
+      <svg class="lights-svg" viewBox="0 0 1200 70" preserveAspectRatio="none">
+        <path d="M0,12 Q150,55 300,20 T600,22 T900,18 T1200,28" fill="none" stroke="var(--marigold-line)" stroke-width="5" opacity="0.5"/>
+        <g id="bulbRow"></g>
+      </svg>
     </div>
+    <nav>
+      <a href="#top" class="brand">Our Love Story</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#letter">Love Note</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <script src="script.js"></script>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <span class="eyebrow">Happy Anniversary Ella Ko!</span>
+      <h1>My <em>euphoria,</em> my <em>solace,</em><br> My <em>home</em></h1>
+      <p class="sub"></p>
+
+      <div class="counter" id="liveCounter">
+        <div class="unit">
+          <span class="num" id="years">0</span>
+          <span class="lbl">Years</span>
+        </div>
+        <div class="unit">
+          <span class="num" id="months">0</span>
+          <span class="lbl">Months</span>
+        </div>
+        <div class="unit">
+          <span class="num" id="days">0</span>
+          <span class="lbl">Days</span>
+        </div>
+        <div class="unit">
+          <span class="num" id="hours">0</span>
+          <span class="lbl">Hours</span>
+        </div>
+        <div class="unit">
+          <span class="num" id="minutes">0</span>
+          <span class="lbl">Minutes</span>
+        </div>
+        <div class="unit">
+          <span class="num" id="seconds">0</span>
+          <span class="lbl">Seconds</span>
+        </div>
+      </div>
+      <br>
+      <a href="#letter" class="hero-cta">
+        Read my letter love love!
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery" style="background:var(--parchment);">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">18 Photos, for 18 months</span>
+        <h2>Paboritong pitik ni brayl</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="polaroid reveal"
+          data-letter="After a long day at the campus, I was heading home. I took the elevator then the person I've been searching around campus for nearly 8 months spawned randomly in the elevator. Seeing this as an opportunity, I peeked stealthily trying to get a glance of the combination of letters plastered on her chest. The most beautiful name I've ever seen---Rea Michaella Tobias."
+          data-caption="how it started">
+          <img class="thumb" src="photos/note.jpg" alt="Us at the coffee shop where it all started" style="--focal:50% 35%">
+          <figcaption>How it started</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="March 13th, the day I confessed. Torpe ako dati pero for some reason confessing to you felt easy, felt comfortable."
+          data-caption="confession">
+          <img class="thumb" src="photos/confession.jpg" alt="First confession moment" style="--focal:50% 40%">
+          <figcaption>Confession</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="geh ighost moko.">
+          <img class="thumb" src="photos/ghost.jpg" alt="A lazy Sunday morning together" style="--focal:50% 25%">
+          <figcaption>>:\</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="I had already bought this gift prior to even meeting you for the first time, prior to even knowing that I had a chance on you. Sumugal rin ako in a way, kung magustohan mo edi guds---kung hindi then atleast I left with no regrets."
+          data-caption="the first gift I gave you">
+          <img class="thumb" src="photos/note.jpg" alt="A gift moment remembered" style="--focal:50% 45%">
+          <figcaption>First gift</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="Immediately after receiving the gift, you were happy. The smile painted upon receiving the crocheted flower. I still remember it to this day---still would do it over and over again just to see that smile."
+          data-caption="the photo we took after that gift">
+          <img class="thumb" src="photos/confession.jpg" alt="The photo we took right after that gift" style="--focal:50% 30%">
+          <figcaption>The photo we took after that gift</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="That quiet evening when we shared our dreams and laughed until the stars disappeared."
+          data-caption="stargazing">
+          <img class="thumb" src="photos/eep.jpg" alt="Stargazing date" style="--focal:50% 35%">
+          <figcaption>eep</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="The time we wandered through the park and you couldn't stop smiling at every little thing."
+          data-caption="park walk">
+          <img class="thumb" src="photos/fd.jpg" alt="Walk in the park" style="--focal:50% 40%">
+          <figcaption>Final Destination with u</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="A simple afternoon turned unforgettable because I was with you."
+          data-caption="simple afternoon">
+          <img class="thumb" src="photos/confession.jpg" alt="Simple afternoon" style="--focal:50% 45%">
+          <figcaption>First Anniv</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="That silly face you made when we were trying to take a serious photo."
+          data-caption="silly face">
+          <img class="thumb" src="photos/ghost.jpg" alt="Silly photo moment" style="--focal:50% 50%">
+          <figcaption>Photo with gng</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="The first time I saw you laugh at my terrible joke and felt like I had won the world."
+          data-caption="first laugh">
+          <img class="thumb" src="photos/note.jpg" alt="First laugh together" style="--focal:50% 30%">
+          <figcaption>Cutesy artwork</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="A rainy day, cozy indoors, and you holding my hand like you never wanted to let go."
+          data-caption="rainy day">
+          <img class="thumb" src="photos/confession.jpg" alt="Rainy day memory" style="--focal:50% 35%">
+          <figcaption>711 shot</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="The little moments when we were both quiet, but it felt like the loudest kind of togetherness."
+          data-caption="quiet moments">
+          <img class="thumb" src="photos/ghost.jpg" alt="Quiet moment together" style="--focal:50% 40%">
+          <figcaption>September Monthsary</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="Every time I think of you, I see one more reason why I chose you."
+          data-caption="reasons">
+          <img class="thumb" src="photos/note.jpg" alt="Reasons I choose you" style="--focal:50% 25%">
+          <figcaption>Tsundere</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="This photo reminds me of the first time I realized we were building something real."
+          data-caption="building us">
+          <img class="thumb" src="photos/confession.jpg" alt="Building us" style="--focal:50% 45%">
+          <figcaption>Motel shot</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="A small adventure, a big memory, and you making every second brighter."
+          data-caption="small adventure">
+          <img class="thumb" src="photos/ghost.jpg" alt="Small adventure" style="--focal:50% 50%">
+          <figcaption>Samgyup</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="The way your eyes lit up when I surprised you with something unexpected."
+          data-caption="surprise gift">
+          <img class="thumb" src="photos/note.jpg" alt="Surprise gift" style="--focal:50% 35%">
+          <figcaption>Fat fucking frog</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="A dinner for two and a quiet promise that there are many more to come."
+          data-caption="dinner date">
+          <img class="thumb" src="photos/confession.jpg" alt="Dinner date" style="--focal:50% 40%">
+          <figcaption>Dinner date</figcaption>
+        </figure>
+        <figure class="polaroid reveal"
+          data-letter="A favorite memory saved for last — the one that makes every day feel brighter."
+          data-caption="favorite memory">
+          <img class="thumb" src="photos/ghost.jpg" alt="Favorite memory" style="--focal:50% 30%">
+          <figcaption>Favorite memory</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PHOTO LETTER MODAL ============ -->
+  <div class="modal" id="galleryModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="Close">&times;</button>
+      <div class="modal-photo" id="modalPhoto"></div>
+      <div class="modal-body">
+        <span class="eyebrow" id="modalCaption"></span>
+        <h3 class="modal-title">For this moment</h3>
+        <div class="modal-letter" id="modalLetter"></div>
+        <p class="modal-sign" id="modalSign">— always yours, for every year still ahead</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ LETTER ============ -->
+  <section id="letter">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">One More Thing</span>
+        <h2>A little note for you</h2>
+      </div>
+      <div class="letter-wrap reveal">
+        <div class="letter">
+          <p>My love---my dear Ella,</p>
+          <p>1 year, 365 days, 8,760 hours, 525,600 minutes and 31,536,000 seconds. A whole year has passed yet despite all the things that happened-the things we went through, you're still the person I choose, I yearn for, I want---</p>
+          <p class="emphasis-line">I love.</p>
+          <p>It all started in my freshmen's orientation week. The crowd was roaring with excitement. Everyone pushed up against each other in the blazing 8 AM heat at the time. With the host of the event hyping the crowd up, giving her welcoming remarks yet I can't help but be fixated on this one person at the back. She was pretty. She was beautiful. She was so damned gorgeous that everything and everyone felt silent at the moment as I silently admired this girl from a distance. It's funny-our campus guide was supposed to help me find my way around the university, but somehow, I ended up searching for her instead. Turns out, she was the only orientation I really needed.</p>
+          <p>The sole person I've spent nearly 8 months trying to find around campus is now at my bed, sleeping beside me, drooling on my back (as of writing this letter). We've been through hell and back together, but still we choose each other despite it all. Perhaps that's what cemented this relationship to be ours and ours only as we continuously choose each other in the storm. My love for you is unwavering, still with that warm spark within with each day being kindled turning into a blazing affection and intimacy within.</p>
+          <p>To where you are is where I am, and I wouldn't even dare to say that you will be loved simply because I'm here, cause even in my absence, my love for you will not leave. I will love you always in all ways---in my presence, in my absence, in our quiet moments of cuddling, in our cold and messy arguments, in moments where we share different lives, and even the distance (hopefully not) that may possibly come. My love for you will not falter. Find me in serendipity, in moments where you feel joy, in moments where you feel lost, in moments where you eat Cheezy or Chicken Joo, in moments where you play on our Minecraft server, in moments where life is unexpectedly kind to you, in moments where everything is all in place, in moments where you feel cared for.</p>
+          <p>When those moments come, recognize me within them. I don't know why I wrote this as if I'm dead pero maganda kasi yung pagkasulat ko sa simula nung previous paragraph kaya tinuloy tuloy kona (best regards, Maxwell Pasig Next Gen). Kidding aside, perhaps that's how I will always be with you despite my absence, not necessarily physically there but letting the good in life find its path to you.</p>
+          <p>Remember that if love is a choice we make again and again and again, then let me spend my lifetime choosing you---choosing us. I love you so much my dearest Ella.</p>
+          <p class="sign-off">Always and will always be yours, <em>Bryle</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="brand">Rolly &amp; Rei</span>
+    Made with love, one line of code at a time.
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
